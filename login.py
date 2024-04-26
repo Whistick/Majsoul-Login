@@ -47,4 +47,40 @@ for i in range(acccounts):
     print('Entering game...')
     sleep(20) #loading...
     print('Login success')
+
+    # 5.check mails
+    print('Check mails')
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 350, -210)\
+        .click()\
+        .perform()
+    sleep(5)
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 400, -200)\
+        .click()\
+        .perform()
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen,270, -230)\
+        .click()\
+        .perform()
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen,50, -220)\
+        .click()\
+        .perform()
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen,80, 190)\
+        .click()\
+        .perform()
+    sleep(5)
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 400, -200)\
+        .click()\
+        .perform()
+    sleep(5)
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 400, -200)\
+        .click()\
+        .perform()
+    print('Complete!')
+    sleep(5)
     driver.quit()
