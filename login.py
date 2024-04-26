@@ -15,7 +15,7 @@ for i in range(acccounts):
 
     #1.open browser
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")
+    # options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
     driver.set_window_size(1000, 720)
     driver.get("https://game.maj-soul.net/1/")
@@ -47,4 +47,11 @@ for i in range(acccounts):
     print('Entering game...')
     sleep(20) #loading...
     print('Login success')
+
+    #5.try
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 250, 50)\
+        .click()\
+        .perform()
+    
     driver.quit()
